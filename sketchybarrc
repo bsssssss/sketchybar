@@ -27,7 +27,6 @@ default=(
   padding_right=5
   icon.font="JetBrainsMono Nerd Font:Light:15.0"
   label.font="JetBrainsMono Nerd Font:Light:13.0"
-  # label.font="SF Pro:Semibold:14.0"
   icon.color=0xffffffff
   label.color=0xffffffff
   icon.padding_left=0
