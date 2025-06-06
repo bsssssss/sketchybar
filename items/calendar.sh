@@ -1,5 +1,4 @@
 #!/usr/bin/env bash
 
 sketchybar --add item calendar right \
-           --set calendar \
-           label="$(date +'%a %d %b  %H:%M')"
+           --set calendar update_freq=30 script="$PLUGIN_DIR/calendar.sh"
