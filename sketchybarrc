@@ -26,7 +26,7 @@ default=(
   padding_right=5
   # icon.font="JetBrainsMono Nerd Font:Light:16.0"
   # label.font="JetBrainsMono Nerd Font:Light:15.0"
-  icon.font="CommitMono:Regular:16.0"
+  icon.font="CommitMono:Regular:15.0"
   label.font="CommitMono:Regular:15.0"
   icon.color="$FG_COLOR"
   label.color="$FG_COLOR"
@@ -39,10 +39,10 @@ default=(
 )
 sketchybar --default "${default[@]}"
 
-# Mission Control spaces
+# Left side
 source "$ITEMS_DIR/space.sh"
 
-# Right side items
+# Right side
 source "$ITEMS_DIR/clock.sh"
 source "$ITEMS_DIR/calendar.sh"
 source "$ITEMS_DIR/battery.sh"
