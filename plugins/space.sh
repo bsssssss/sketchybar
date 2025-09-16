@@ -12,5 +12,7 @@ if [[ "$SELECTED" == true ]]; then
     icon.color="$FG_COLOR" \
     icon.font.style="Bold" 
 else
-  sketchybar --set $NAME icon.color="$FG_COLOR_DIMMED"
+  sketchybar --set $NAME \
+    icon.color="$FG_COLOR_DIMMED" \
+    icon.font.style="Regular" 
 fi
