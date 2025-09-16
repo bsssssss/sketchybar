@@ -11,6 +11,7 @@ bar=(
   height=32
   blur_radius=32
   sticky=on
+  margin=-10
   color="$BAR_COLOR"
   )
 sketchybar --bar "${bar[@]}"
@@ -19,22 +20,20 @@ default=(
   background.color="$ITEM_BG_COLOR"
   background.corner_radius=10
   background.height=28
-  background.y_offset=0
-  background.padding_left=10
-  background.padding_right=10
-  background.y_offset=1
+  background.padding_left=0
+  background.padding_right=0
   padding_left=5
   padding_right=5
   icon.font="JetBrainsMono Nerd Font:Light:15.0"
   label.font="JetBrainsMono Nerd Font:Light:13.0"
-  icon.color=0xffffffff
-  label.color=0xffffffff
-  icon.padding_left=0
-  icon.padding_right=0
-  label.padding_left=8
-  label.padding_right=8
-  icon.y_offset=1
-  label.y_offset=1
+  icon.color="$FG_COLOR"
+  label.color="$FG_COLOR"
+  icon.padding_left=2
+  icon.padding_right=2
+  label.padding_left=5
+  label.padding_right=5
+  icon.y_offset=0
+  label.y_offset=0
 )
 sketchybar --default "${default[@]}"
 

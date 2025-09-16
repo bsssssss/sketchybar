@@ -8,7 +8,9 @@ PLUGIN_DIR="$CONFIG_DIR/plugins"
 source "$PLUGIN_DIR/colors.sh"
 
 if [[ "$SELECTED" == true ]]; then
-  sketchybar --set $NAME icon.color=0xFFFFFFFF
+  sketchybar --set $NAME \
+    icon.color="$FG_COLOR" \
+    icon.font.style="Bold" 
 else
-  sketchybar --set $NAME icon.color=0xAAAAAAAA
+  sketchybar --set $NAME icon.color="$FG_COLOR_DIMMED"
 fi
