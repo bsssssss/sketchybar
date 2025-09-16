@@ -1,17 +1,17 @@
 #!/usr/bin/env bash
 
+PLUGIN_DIR="$CONFIG_DIR/plugins"
+
 SPACE_ICONS=("1" "2" "3" "4")
 for i in "${!SPACE_ICONS[@]}"
 do
   sid="$(($i+1))"
   space=(
     space="$sid"
-    label="${SPACE_ICONS[i]}"
-    icon.drawing=off
-    label.padding_left=8
-    label.padding_right=8
-    label.width=32
-    label.align=center
+    icon="${SPACE_ICONS[i]}"
+    icon.padding_left=8
+    icon.padding_right=8
+    label.drawing=off
     script="$PLUGIN_DIR/space.sh"
     click_script="yabai -m space --focus $sid"
   )

@@ -1,3 +1,3 @@
 #!/usr/bin/env bash
 
-sketchybar --set $NAME label="$(date +'%a %d %b  %H:%M')" label.font.style="Bold"
+sketchybar --set $NAME label="$(LC_ALL=fr_FR.UTF-8 date +'%A %d %B')"
